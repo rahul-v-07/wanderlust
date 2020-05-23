@@ -22,6 +22,7 @@ export const Container = styled.div`
     top: 0;
     z-index: 100;
     background: #e5e5e5;
+    justify-content: space-between;
 `
 
 export const Latter = styled.div`
@@ -31,4 +32,17 @@ export const Latter = styled.div`
     animation-name: ${fadeAnimation};
     animation-duration: 1s;
     animation-iteration-count: infinite;
+`
+
+export const TitleWrapper = styled.div`
+    display: flex;
+`
+
+export const SideButton = styled.div`
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bolder;
+
 `

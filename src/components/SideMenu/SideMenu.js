@@ -20,8 +20,8 @@ const list = [{
     link: '/pondicherry',
 }]
 
-const SideMenu = ({ closeCallback, show: initialShow }) => {
-    const [ show, toggleShow] = useState(1)
+const SideMenu = ({ closeCallback, show: showProp }) => {
+    const [ show, toggleShow] = useState(0)
     const refList = list.map(() => null)
     const RenderedList = list.map(({ name }, index) => {
         const decay = show == -1
@@ -43,17 +43,16 @@ const SideMenu = ({ closeCallback, show: initialShow }) => {
         if(toggle == false) {
             setTimeout(() => {
                 toggleShow(() => 0)
-                closeCallback()
+                closeCallback && closeCallback()
             }, 1000)
         }
     }
+    useEffect(() => {        
+        showProp && toggle(showProp)
+    }, [showProp])
     useEffect(() => {
         const checkClick = (event) => {
-            toggle(false)
-            // const clickedOutside = refList.every((ref) => ref.current && !ref.current.contains(event.target))
-            // if (clickedOutside) {
-            //     console.log("psfhsdjkfdfk")
-            // }
+            showProp && toggle(false)
         }
         document.addEventListener('click', checkClick);
         return () => document.removeEventListener('click', checkClick)

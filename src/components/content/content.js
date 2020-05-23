@@ -5,11 +5,8 @@ import {
     Button,
 } from 'antd'
 import { Div } from './styled'
-import SideMenu from '../SideMenu'
 
 const Conent = () => {
-  const [ show, toggleShow ] = useState(false)
-  const toggleSidebar = (toggle) => toggleShow(toggle)
   return (
     <>
       <Div>
@@ -25,15 +22,6 @@ const Conent = () => {
           containing Lorem Ipsum passages, and more recently with desktop publishing
           software like Aldus PageMaker including versions of Lorem Ipsum.
       </Div>
-      <Button
-        onClick={() => toggleSidebar(true)}
-      >
-        CLICK ME
-      </Button>
-      <SideMenu
-        show={show}
-        closeCallback={() => toggleSidebar(false)}
-      />
     </>
   )
 }
