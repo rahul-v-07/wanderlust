@@ -1,55 +1,41 @@
-import React, { useState, useEffect, useLayoutEffect } from 'react';
+import React, {useState} from 'react';
 import {
     Row,
     Col,
-    Button
+    Button,
 } from 'antd'
+import { Div } from './styled'
+import SideMenu from '../SideMenu'
 
-export default () => {
-  const [ count, setCount ] = useState(0);
-  useEffect(() => console.log('The first one'));
-  useLayoutEffect(() => console.log('The second one'));
+const Conent = () => {
+  const [ show, toggleShow ] = useState(false)
+  const toggleSidebar = (toggle) => toggleShow(toggle)
   return (
-    <Row style={{
-      padding: '20px'  
-    }}>
+    <>
+      <Div>
+          Lorem Ipsum is simply dummy text
+          of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make
+          a type specimen book. It has survived not only five
+          centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was 
+          popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop publishing
+          software like Aldus PageMaker including versions of Lorem Ipsum.
+      </Div>
       <Button
-        onClick={() => setCount(count => count + 1)}
+        onClick={() => toggleSidebar(true)}
       >
-        Increment {count}
+        CLICK ME
       </Button>
-    </Row>
+      <SideMenu
+        show={show}
+        closeCallback={() => toggleSidebar(false)}
+      />
+    </>
   )
 }
 
-// export default () => {
-//   const [ count, updateCount ] = useState(0);
-//   const [ upperLimit, setUpperLimit ] = useState(0);
-
-//   const incrementCount = () => {
-//     updateCount(count + 1);
-//     console.log("Runs while updating COCOCO");
-//   }
-
-//   useEffect(() => {
-//     setUpperLimit( 2 * count );
-//     document.title = `The number of clicks is ${count}`
-//     console.log("Runs after render");
-//   }, [count])
-
-//   useEffect(() => {
-//     console.log(`The upper limit is ${upperLimit}`)
-//     console.log("Runs idk when. blah blah blah")
-//   }, [upperLimit])
-
-//   return (
-//     <Row style={{ padding: '10px'}}>
-//       {console.log('Runs while rendering COCOCO')}
-//       <Col span='12'>
-//         <Button onClick={incrementCount}>
-//           Increment Counter
-//         </Button>
-//       </Col>
-//     </Row>
-//   )
-// }
+export default Conent;

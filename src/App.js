@@ -1,8 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useLayoutEffect  } from 'react';
 import './App.css';
 import Content from './components/content';
-import Header from './components/header'
+import Header from './components/header';
 
 function App() {
   return (
@@ -14,3 +13,4 @@ function App() {
 }
 
 export default App;
+
