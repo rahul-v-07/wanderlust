@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/wanderlust/static/css/main.d15e702f.chunk.css",
-    "main.js": "/wanderlust/static/js/main.06586e0b.chunk.js",
-    "main.js.map": "/wanderlust/static/js/main.06586e0b.chunk.js.map",
+    "main.css": "/wanderlust/static/css/main.8c855b50.chunk.css",
+    "main.js": "/wanderlust/static/js/main.e6641116.chunk.js",
+    "main.js.map": "/wanderlust/static/js/main.e6641116.chunk.js.map",
     "runtime-main.js": "/wanderlust/static/js/runtime-main.51551550.js",
     "runtime-main.js.map": "/wanderlust/static/js/runtime-main.51551550.js.map",
     "static/css/2.7156d6df.chunk.css": "/wanderlust/static/css/2.7156d6df.chunk.css",
     "static/js/2.5adbbdf1.chunk.js": "/wanderlust/static/js/2.5adbbdf1.chunk.js",
     "static/js/2.5adbbdf1.chunk.js.map": "/wanderlust/static/js/2.5adbbdf1.chunk.js.map",
     "index.html": "/wanderlust/index.html",
-    "precache-manifest.a5dc2b73682948ea0effb85b0724e4a6.js": "/wanderlust/precache-manifest.a5dc2b73682948ea0effb85b0724e4a6.js",
+    "precache-manifest.f8859868c0802918adb6fb6a6715444f.js": "/wanderlust/precache-manifest.f8859868c0802918adb6fb6a6715444f.js",
     "service-worker.js": "/wanderlust/service-worker.js",
     "static/css/2.7156d6df.chunk.css.map": "/wanderlust/static/css/2.7156d6df.chunk.css.map",
-    "static/css/main.d15e702f.chunk.css.map": "/wanderlust/static/css/main.d15e702f.chunk.css.map",
+    "static/css/main.8c855b50.chunk.css.map": "/wanderlust/static/css/main.8c855b50.chunk.css.map",
     "static/js/2.5adbbdf1.chunk.js.LICENSE.txt": "/wanderlust/static/js/2.5adbbdf1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.51551550.js",
     "static/css/2.7156d6df.chunk.css",
     "static/js/2.5adbbdf1.chunk.js",
-    "static/css/main.d15e702f.chunk.css",
-    "static/js/main.06586e0b.chunk.js"
+    "static/css/main.8c855b50.chunk.css",
+    "static/js/main.e6641116.chunk.js"
   ]
 }
